@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es-cl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Meta description-->
+    <meta name="description" content="Web blog de café" />
+    <title>ProteinBreak</title>
+    <link rel="icon" type="png" href="img/icon.png" />
+
+    <!--preload-->
+    <link rel="preload" href="css/normalize.css" as="style" />
+    <link rel="stylesheet" href="css/normalize.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,400;1,600&display=swap"
+      crossorigin
+      as="font"
+    />
+    <!---->
+
+    <link rel="preload" href="css/style.css" as="style" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!--Modernizr es una libreria js que detecta el soporte de una página web, tiene varias "detects"
+        donde agrega clases para administrar html o css según sea el caso-->
+    <script src="js/modernizr.js"></script>
+  </head>
+
+  <body>
+    <!--Header-->
+    <header class="header">
+      <div class="contenedor">
+        <div class="barra">
+          <a href="index.html" class="logo">
+            <h1 class="logo__texto centrar-texto">
+              Protein<span class="logo__texto--bold">Break</span>
+            </h1>
+          </a>
+
+          <nav class="navegacion">
+            <a href="nosotros.html" class="navegacion__enlace">Nosotros</a>
+            <a href="cursos.html" class="navegacion__enlace">Cursos</a>
+            <a href="contacto.html" class="navegacion__enlace">Contacto</a>
+          </nav>
+        </div>
+      </div>
+
+      <div class="header__texto centrar-texto">
+        <h2>ProteinBreak - Batidos y Snack</h2>
+        <p>
+          ¡Aprende de los mejores
+          <span class="header__texto--free">gratuitamente</span>!
+        </p>
+      </div>
+    </header>
+    <!---->
+
+    <!--Contenedor principal-->
+    <div class="contenedor contenido-principal">
+      <!--Contenido Principal-->
+      <main class="blog">
+        <h3>Blogs</h3>
+        <article class="entrada">
+          <div class="entrada_imagen">
+            <!--Para mejorar el performance utiliza imagenes jpg-->
+            <!--En vez de img utiliza picture: toma el primer recurso si lo soporta, sino pasa al siguiente-->
+            <picture>
+              <img
+                loading="lazy"
+                src="img/Batido_Proteico.jpg"
+                alt="Imagen de batido proteico"
+              />
+            </picture>
+          </div>
+          <div class="entrada__contenido">
+            <h4 class="entrada__titulo">Batidos proteicos</h4>
+            <p class="entrada__texto">
+              Los batidos proteicos son una forma popular y conveniente de
+              aumentar la ingesta de proteínas en la dieta. Estos batidos están
+              compuestos principalmente por proteínas en polvo, que pueden ser
+              de origen animal, como el suero de leche, o de origen vegetal,
+              como la soja o el guisante. Estos polvos se mezclan con agua,
+              leche o jugo de frutas para crear un batido.
+            </p>
+            <a
+              href="entrada.html"
+              class="btn btn--primario"
+              rel="Sobre_Nosotros"
+              >Leer artículo</a
+            >
+          </div>
+        </article>
+
+        <article class="entrada">
+          <div class="entrada_imagen">
+            <picture>
+              <img
+                loading="lazy"
+                src="img/Snacks_Proteico.jpg"
+                alt="Imagen blog"
+              />
+            </picture>
+          </div>
+          <div class="entrada__contenido">
+            <h4 class="entrada__titulo">Snacks proteicos</h4>
+            <p class="entrada__texto">
+              Los snacks proteicos son una excelente opción para recuperar
+              energías después de un entrenamiento o actividad física intensa.
+              Además, son una alternativa saludable y deliciosa para satisfacer
+              el hambre entre comidas. Estos snacks suelen estar elaborados con
+              ingredientes naturales y nutritivos, como frutos secos, semillas,
+              quinoa, chía y proteínas de alta calidad, que ayudan a mantener la
+              saciedad por más tiempo y a mejorar el rendimiento físico.
+              Asimismo, se pueden encontrar en una amplia variedad de sabores y
+              presentaciones, desde barras energéticas hasta mezclas de frutos
+              secos y chips de proteína.
+            </p>
+            <a
+              href="entrada.html"
+              class="btn btn--primario"
+              rel="Sobre_Nosotros"
+              >Leer artículo</a
+            >
+          </div>
+        </article>
+
+        <article class="entrada">
+          <div class="entrada_imagen">
+            <picture>
+              <img
+                loading="lazy"
+                src="img/Menu_Proteico.jpg"
+                alt="Imagen blog"
+              />
+            </picture>
+          </div>
+          <div class="entrada__contenido">
+            <h4 class="entrada__titulo">Menu proteico</h4>
+            <p class="entrada__texto">
+              El menú proteico ofrece muchas calorías, vitaminas y proteínas que
+              permiten una mejor recuperación muscular al proporcionar las
+              cantidades necesarias para aumentar la masa muscular. Entre los
+              alimentos que se pueden incluir en tu menú proteico se encuentran
+              el pollo, el pavo, el pescado, los huevos, la quinoa, las
+              lentejas, el tofu, entre otros. Además, puedes complementar tus
+              comidas con batidos de proteínas y barras de proteínas para
+              alcanzar tus objetivos de fitness de manera más efectiva.
+            </p>
+            <a
+              href="entrada.html"
+              class="btn btn--primario"
+              rel="Sobre_Nosotros"
+              >Leer artículo</a
+            >
+          </div>
+        </article>
+      </main>
+      <!---->
+
+      <!--Barra lateral-->
+      <aside class="sidebar">
+        <h3>Cursos y talleres</h3>
+        <ul class="cursos">
+          <li class="item">
+            <h4 class="item__titulo">Batidos proteicos</h4>
+            <p class="item__label">
+              Precio:
+              <span class="item__label--precio">Gratis</span>
+            </p>
+            <p class="item__label">
+              Cupos:
+              <span class="item__label--pasivo">35</span>
+            </p>
+            <a href="cursos.html" class="btn" rel="Curso_Batidos"
+              >Ir al curso</a
+            >
+          </li>
+
+          <li class="item">
+            <h4 class="item__titulo">Snacks proteicos</h4>
+            <p class="item__label">
+              Precio:
+              <span class="item__label--precio">Gratis</span>
+            </p>
+            <p class="item__label">
+              Cupos:
+              <span class="item__label--pasivo">20</span>
+            </p>
+            <a href="cursos.html" class="btn" rel="Curso_Snacks">Ir al curso</a>
+          </li>
+
+          <li class="item">
+            <h4 class="item__titulo">Menu proteicos</h4>
+            <p class="item__label">
+              Precio:
+              <span class="item__label--precio">Gratis</span>
+            </p>
+            <p class="item__label">
+              Cupos:
+              <span class="item__label--pasivo">50</span>
+            </p>
+            <a href="cursos.html" class="btn" rel="Curso_Menu">Ir al curso</a>
+          </li>
+        </ul>
+      </aside>
+    </div>
+    <!---->
+
+    <!--Pie de página-->
+    <footer class="footer">
+      <div class="contenedor">
+        <a href="index.html" class="logo">
+          <h1 class="logo__texto centrar-texto">
+            Protein<span class="logo__texto--bold">Break</span>
+          </h1>
+        </a>
+        <nav class="navegacion">
+          <a href="nosotros.html" class="navegacion__enlace" rel="Nosotros"
+            >Nosotros</a
+          >
+          <a href="cursos.html" class="navegacion__enlace" rel="Cursos"
+            >Cursos</a
+          >
+          <a href="contacto.html" class="navegacion__enlace" rel="Contactos"
+            >Contacto</a
+          >
+        </nav>
+      </div>
+    </footer>
+    <!---->
+  </body>
+</html>
